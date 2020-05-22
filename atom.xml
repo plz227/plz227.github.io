@@ -2,13 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://plz227.github.io</id>
     <title>plz227</title>
-    <updated>2020-05-22T19:06:32.886Z</updated>
+    <updated>2020-05-22T19:08:22.562Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://plz227.github.io"/>
     <link rel="self" href="https://plz227.github.io/atom.xml"/>
     <subtitle>你说你讨厌下雨，我也只是一场雨&lt;br&gt;
 &lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;
-            &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;本站总访问量&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次&lt;/span&gt;</subtitle>
+&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;
+  本站访客数&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人次
+&lt;/span&gt;|&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;
+    本站总访问量&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次
+&lt;/span&gt;</subtitle>
     <logo>https://plz227.github.io/images/avatar.png</logo>
     <icon>https://plz227.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, plz227</rights>
