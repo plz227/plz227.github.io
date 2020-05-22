@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://plz227.github.io/favicon.ico?v=1590174047651">
+<link rel="shortcut icon" href="https://plz227.github.io/favicon.ico?v=1590174085120">
 <link rel="stylesheet" href="https://plz227.github.io/styles/main.css">
 
 
@@ -35,7 +35,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://plz227.github.io">
-        <img src="https://plz227.github.io/images/avatar.png?v=1590174047651" class="site-logo">
+        <img src="https://plz227.github.io/images/avatar.png?v=1590174085120" class="site-logo">
         <h1 class="site-title">我的自负源于我的嫉妒</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -89,9 +89,42 @@
     </div>
     <div class="site-footer">
       <script>
-function run_date(date){ // 建站日期 var created = Date.parse(date); // 现在时间 var now = new Date().getTime(); // 存活时间 var cha = now - created; // 有多少天 var day = cha / 864e5; // 取整数输出天 var day_c = Math.floor(day); // 减去整数的天，得出剩下的小数，并变成小时（1 天等于 24 小时） var hour = 24 * (day - day_c); // 取整数输出小时 var hour_c = Math.floor(hour); // 减去剩下的小时，得出剩下的小数，几分钟（1小时等于60分） var min = 60 * (hour - hour_c); // 取整数输出分钟 var min_c = Math.floor(min); // 剩下的就是秒，直接取整 var sec = Math.floor(60 * (min - min_c)); return "站点已萌萌哒存活了 " + day_c + " 天 " + hour_c + " 小时 " + min_c + " 分 " + sec + " 秒"; }setInterval(function () { 你的元素选择器.innerHTML = run_date("2018/1/1"); }, 1000); 
+function run_date(date){
+// 建站日期
+var created = Date.parse(date);
+// 现在时间
+var now = new Date().getTime();
+// 存活时间
+var cha = now - created;
+// 有多少天
+var day = cha / 864e5;
+// 取整数输出天
+var day_c = Math.floor(day);
+// 减去整数的天，得出剩下的小数，并变成小时（1 天等于 24 小时）
+var hour = 24 * (day - day_c);
+// 取整数输出小时
+var hour_c = Math.floor(hour);
+// 减去剩下的小时，得出剩下的小数，几分钟（1小时等于60分）
+var min = 60 * (hour - hour_c);
+// 取整数输出分钟
+var min_c = Math.floor(min);
+// 剩下的就是秒，直接取整
+var sec = Math.floor(60 * (min - min_c));
+return "博客已萌萌哒存活 <a>" + day_c + "</a> 天 <a>" + hour_c + "</a> 小时 <a>" + min_c + "</a> 分 <a>" + sec + "</a> 秒";
+}
 
-</script> | <a class="rss" href="https://plz227.github.io/atom.xml" target="_blank">RSS</a>
+setInterval(function () {
+    document.querySelector(".foot-date").innerHTML = run_date("2019/1/1");
+}, 1000);
+
+function add_zero(num){
+    if(num.toString().length < 2){
+        num = "0" + num;
+    }
+    return num;
+}
+</script>
+<span class="foot-date">博客已萌萌哒存活 <a>?</a> 天 <a>?</a> 小时 <a>?</a> 分 <a>?</a> 秒</span> | <a class="rss" href="https://plz227.github.io/atom.xml" target="_blank">RSS</a>
     </div>
   </div>
 </div>
